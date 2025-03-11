@@ -4,21 +4,29 @@ The Library Management System API is built using Spring Boot 3.4.3 and provides 
 ## Running the Application
 
 1. Clone the repository
-  `git clone [repository-url](https://github.com/soliman-sDev/Library-Management-System)`
-  `cd library-management-system`
 
-2. Build and run the application
-  `mvn spring-boot:run`
+    `git clone [repository-url](https://github.com/soliman-sDev/Library-Management-System)`
 
-3. Access H2 Database Console
-> URL: http://localhost:8080/h2-console
-> JDBC URL: jdbc:h2:mem:librarydb
-> Username: sa,
-> Password: (leave empty)
+    `cd library-management-system`
+
+3. Build and run the application
+
+    `mvn spring-boot:run`
+
+5. Access H2 Database Console
+   
+  > URL: http://localhost:8080/h2-console
+
+  > JDBC URL: jdbc:h2:mem:librarydb
+
+  > Username: sa
+
+  > Password: (leave empty)
 
 ## Authentication (Basic Auth)
 This API uses Basic Authentication to secure endpoints. You must provide a username and password in the request header.
 username and password can edit from application.properties file
+
 `spring.security.user.name=admin`
 `spring.security.user.password=admin123`
 
